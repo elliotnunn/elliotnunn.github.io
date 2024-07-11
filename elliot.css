@@ -1,0 +1,131 @@
+/* Adapted from Josh Juran's site with his kind permission */
+
+/* CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Fonts */
+
+h1, h2
+{
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+p, h3
+{
+	font-family: Times, serif;
+}
+
+/* Font styling */
+
+h1
+{
+	font-size: 200%;
+	font-weight: 900;
+}
+
+h2
+{
+	font-size: 150%;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+
+/* Colours */
+
+body {
+	color: DarkBlue;
+	background: #FCF5E1;
+}
+
+/* Basic "centred shrinking" body */
+
+body
+{
+	width: 960px;
+	max-width: 100%;
+	margin: 12px auto;
+}
+
+/* Overall spacing of elements */
+
+body > * + *
+{
+	border-top: 1px dashed DarkBlue;
+}
+
+body > * > *
+{
+	margin: 12px 12px;
+}
+
+/* Special styling of page header */
+
+.subtitle
+{
+	margin-top: -12px;
+	font-size: 75%;
+	font-style: italic;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* Special styling of per-project headings */
+
+h3
+{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+h3 + * {
+	margin-top: 0;
+}
+
+/* Fairly unimpressive attempt at responsive design */
+img.me
+{
+	float: left;
+}
+
+@media screen and (max-width: 600px) {
+	img.me {
+		float: none;
+		display: block;
+		margin: 12px auto;
+	}
+}
+
+/*
+pre
+{
+	margin: 1em 0em;
+
+	padding: 0.75em;
+
+	border: 1px solid #ccc;
+
+	color: inherit;
+	background-color: #f8f8f8;
+
+	line-height: 150%;
+}
+ */
